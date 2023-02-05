@@ -1,0 +1,81 @@
+#login-id {
+    padding-top: 165px;
+    margin-top: 0;
+    background-color: rgba(230, 230, 230, 0.514);
+    height: 100vh;
+}
+
+.login-container {
+    text-align: center;
+}
+
+.login-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 6px;
+    padding: 20px 42px;
+    background-color: rgba(212, 212, 209, 0.781);
+}
+
+.p-float-label {
+    width: 100%;
+}
+
+.login-card .p-inputtext.p-component {
+    width: 100% !important;
+    font-size: 22px;
+}
+.login-card .p-password.p-component.p-inputwrapper.p-input-icon-right {
+    width: 100% !important;
+    font-size: 22px;
+}
+
+.password-div,
+.email-div {
+    width: 100% !important;
+    text-align: left; 
+}
+
+#password-help,
+#email-help {
+    font-size: 18px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-label {
+    width: 180px;
+    font-size: 20px;
+    padding-top: 11px;
+    text-align: left;
+}
+
+.linedata-img {
+    text-align: center;
+}
+
+#logo-linedata-login {
+    width: 260px;
+    height: auto;
+}
+
+.btn-container {
+    padding: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+.login-btn {
+    font-size: 22px;
+    color: aliceblue;
+    background-color: #E30130;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 32px;
+    cursor: pointer;
+}

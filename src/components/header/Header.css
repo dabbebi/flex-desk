@@ -1,0 +1,56 @@
+#header-id {
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    position: fixed; 
+    top: 0%;
+    left: 0%;
+    z-index: 112;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.page {
+    color: black;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 8px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: auto;
+    padding-right: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#logo-linedata {
+    width: auto;
+    height: 45px;
+    margin: 0%;
+}
+
+.logo-div {
+    margin-left: 6px;
+    margin-right: 3px;
+    padding: 0%;
+}
+
+.active {
+    color: rgb(227, 3, 52);
+    font-weight: bold;
+}
+
+#logout-div {
+    margin-left: auto;
+    margin-right: 0%;
+    padding-top: 0px;
+}
+
+.sections-div {
+    padding-top: 12px;
+    font-size: 15px;
+}
