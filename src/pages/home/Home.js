@@ -190,15 +190,17 @@ function Home() {
 
   const viewOwnerDialogFooter = (
     <React.Fragment>
-        <Button label="Cancel" icon="pi pi-times" className="p-button-text" onClick={hideViewOwnerDialog} />
-        <Button label="Free" icon="pi pi-check" className="p-button-text" onClick={unbookPlace} disabled={!isMyPlace()} />
+        { isMyPlace() && <Button label="Cancel" icon="pi pi-times" className="p-button-text" onClick={hideViewOwnerDialog} />}
+        { isMyPlace() && <Button label="Free" icon="pi pi-check" className="p-button-text" onClick={unbookPlace} />}
+        { !isMyPlace() && <Button label="OK" icon="pi pi-check" className="p-button-text" onClick={hideViewOwnerDialog} />}
     </React.Fragment>
   );
 
   const confirmBookingDialogFooter = (
     <React.Fragment>
-        <Button label="Cancel" icon="pi pi-times" className="p-button-text" onClick={hideConfirmBookingDialog} />
-        <Button label="Confirm" icon="pi pi-check" className="p-button-text" onClick={bookPlace} disabled={!canBook()}/>
+        { canBook() && <Button label="Cancel" icon="pi pi-times" className="p-button-text" onClick={hideConfirmBookingDialog} />}
+        { canBook() && <Button label="Confirm" icon="pi pi-check" className="p-button-text" onClick={bookPlace}/>}
+        { !canBook() && <Button label="OK" icon="pi pi-check" className="p-button-text" onClick={hideConfirmBookingDialog}/>}
     </React.Fragment>
   );
 
